@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "dev": "webpack && webpack-dev-server --mode production development"
+    "dev": "webpack && webpack-dev-server --mode development"
   },
   "keywords": [],
   "author": "Dennis",
@@ -22,6 +22,7 @@
     "copy-webpack-plugin": "^10.2.1",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
+    "url-loader": "^4.1.1",
     "vue-loader": "^15.9.8",
     "vue-style-loader": "^4.1.3",
     "vue-template-compiler": "^2.6.14",
