@@ -22,7 +22,7 @@
     "serve-static": "^1.14.2"
   },
   "scripts": {
-    "postinstall": "npm run build",
+    "postinstall": "npm install --prefix frontend && npm run build --prefix frontend",
     "start": "node server.js"
   }
 }
