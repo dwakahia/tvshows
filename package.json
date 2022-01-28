@@ -15,7 +15,6 @@
   "homepage": "https://github.com/dwakahia/tvshows#readme",
   "description": "",
   "scripts": {
-    "postinstall": "npm install --prefix frontend && npm run build --prefix frontend",
     "start": "node server.js"
   },
   "devDependencies": {
