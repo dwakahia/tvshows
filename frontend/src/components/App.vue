@@ -1,6 +1,6 @@
 <template>
 <div>
-  <h1>DEV TWO</h1>
+  <h1>site coming soon</h1>
   <img :src="getImgUrl('pic.jpeg')" alt="">
 </div>
 </template>
