@@ -14,10 +14,28 @@ module.exports = {
                 use: 'vue-loader'
             },
             {
-                test: /\.css$/,
+                test: /\.(s*)css$/,
                 use: [
-                    'vue-style-loader',
-                    'css-loader'
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader',
+
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'sass-loader',
+
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'postcss-loader'
+                    }
                 ]
             },
             {

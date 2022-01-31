@@ -1,7 +1,7 @@
 <template>
   <base-layout>
     <form id="regForm" @submit.prevent="register">
-      <p class="text-center text-indigo-600 font-semibold my-2 text-lg">Users List</p>
+      <p class="text-center text-indigo-600 font-semibold my-2 text-lg">Tv Show</p>
       <hr>
       <p class="text-center text-indigo-600 font-semibold my-2 text-sm">Please Register</p>
       <div class="flex p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
@@ -84,7 +84,6 @@
 
 <script>
 import BaseLayout from "./BaseLayout";
-import axios from "axios";
 import http from "../../utils/http";
 
 export default {

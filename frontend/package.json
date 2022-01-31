@@ -12,8 +12,15 @@
   "author": "Dennis",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "autoprefixer": "^9.8.8",
+    "axios": "^0.25.0",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
     "vue": "^2.6.14",
-    "vue-router": "^3.5.3"
+    "vue-router": "^3.5.3",
+    "vue-tailwind": "^2.5.0",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
@@ -22,6 +29,10 @@
     "copy-webpack-plugin": "^10.2.1",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
+    "postcss-loader": "~3.0.0",
+    "sass": "^1.49.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
     "url-loader": "^4.1.1",
     "vue-loader": "^15.9.8",
     "vue-style-loader": "^4.1.3",

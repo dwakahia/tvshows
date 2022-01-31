@@ -1,18 +1,12 @@
 <template>
-<div>
-  <h1>site coming soon</h1>
-  <img :src="getImgUrl('pic.jpeg')" alt="">
-</div>
+  <router-view></router-view>
 </template>
 
 <script>
 export default {
   name: "App",
   methods: {
-    getImgUrl: imgName => {
-      let urlName = imgName.replace(/\s/g, '')
-      return require(`../assets/images/${urlName}`).default
-    }
+
   }
 }
 </script>

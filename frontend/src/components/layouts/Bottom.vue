@@ -1,6 +1,6 @@
 <template>
 <div class="w-100 bg-indigo-600 text-center p-4 rounded-md">
-  <p class="text-white">Users list &copy; {{new Date().getFullYear()}}</p>
+  <p class="text-white"> Tv Shows &copy; {{new Date().getFullYear()}}</p>
 </div>
 </template>
 
