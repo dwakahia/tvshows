@@ -7,6 +7,7 @@ const genres = require('./genres')
 const shows = require('./shows')
 const subscriptions = require('./subscriptions')
 const users = require('./users')
+const notifications = require('./notifications')
 
 
 app.use('/auth', auth);
@@ -16,5 +17,6 @@ app.use('/genres', genres);
 app.use('/shows', shows);
 app.use('/subscriptions', subscriptions);
 app.use('/users', users);
+app.use('/notifications', notifications);
 
 module.exports = app;

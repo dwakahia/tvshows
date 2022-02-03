@@ -7,4 +7,5 @@ const {toggleSubscribe, viewSubscriptions} = require('../controllers/subscriptio
 router.get('/toggle-subscriptions/:id', isAuthenticated, toggleSubscribe);
 router.get('/view-subscriptions/:id', isAuthenticated, viewSubscriptions)
 
+
 module.exports = router;

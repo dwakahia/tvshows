@@ -1,5 +1,6 @@
 const Genre = require('../model/genre')
 const {body, validationResult} = require('express-validator');
+const cloudinary = require('../util/cloudinary')
 
 
 exports.createGenre = [
@@ -16,9 +17,12 @@ exports.createGenre = [
             const {name, poster} = req.body;
 
 
+           let response =  await cloudinary.uploader.upload(poster,{folder: 'tvshow'});
+
+
             let genre = await Genre.create({
                 name,
-                poster
+                poster: response.url
             })
 
             return res.status(200).json({

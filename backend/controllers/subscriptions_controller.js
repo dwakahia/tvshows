@@ -4,8 +4,6 @@ const {Op} = require('sequelize')
 exports.toggleSubscribe = async (req, res, next) => {
     try {
 
-        console.log(req.user);
-        console.log(req.params.id);
 
         let subscription = await Subscription.findOne({
             where: {
@@ -16,7 +14,8 @@ exports.toggleSubscribe = async (req, res, next) => {
             }
         })
 
-        if (subscription) {
+
+        if (!subscription) {
 
             await Subscription.create({
                 'user_id': req.user.id,
@@ -25,7 +24,7 @@ exports.toggleSubscribe = async (req, res, next) => {
 
 
             return res.status(200).json({
-                'message': 'subscription successfully '
+                'message': 'subscribed successfully '
             })
         }
 

@@ -8,7 +8,7 @@ const sequelize = require('./backend/util/database');
 const models = require('./backend/model/index');
 
 
-app.use(bodyParser.json())
+app.use(bodyParser.json({limit: "50mb"}))
 
 app.use(express.json())
 const cors = require('cors');
@@ -25,7 +25,7 @@ app.get('*', (req, res) => {
 
 
 sequelize.sync({
-    force: true,
+    alter: true,
 }).then(result => {
     console.log(result);
     app.listen(port, () => {

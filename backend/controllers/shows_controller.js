@@ -1,5 +1,7 @@
 const Show = require('../model/show')
 const {body, validationResult} = require('express-validator');
+const Genre = require('../model/genre')
+const Episode = require('../model/episode')
 
 
 exports.createShow = [
@@ -40,7 +42,12 @@ exports.createShow = [
 
 exports.getShows = async (req, res, next) => {
     try {
-        let shows = await Show.findAll();
+        let shows = await Show.findAll({
+            include: [
+                {'model': Genre},
+                {'model': Episode}
+            ]
+        });
 
         return res.status(200).json({
             'message': 'shows fetched successfully',
