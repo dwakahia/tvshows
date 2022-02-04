@@ -8,6 +8,8 @@ const shows = require('./shows')
 const subscriptions = require('./subscriptions')
 const users = require('./users')
 const notifications = require('./notifications')
+const favourites = require('./favourites')
+const comments = require('./comments')
 
 
 app.use('/auth', auth);
@@ -18,5 +20,7 @@ app.use('/shows', shows);
 app.use('/subscriptions', subscriptions);
 app.use('/users', users);
 app.use('/notifications', notifications);
+app.use('/favourites', favourites);
+app.use('/comments', comments);
 
 module.exports = app;
